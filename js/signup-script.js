@@ -15,9 +15,9 @@
         
             // FORM VALIDATION
             (!userFullName||!userEmail||!userPassword||!userRepeatedPassword) ? 
-            (document.getElementById("show-message").innerHTML="Please Fill all required Fields!", document.getElementById("show-message").style.color="red"):
-            (userPassword.length<8) ? (document.getElementById("show-message").innerHTML="Your password must be at least 8 characters.", document.getElementById("show-message").style.color="red") : 
-            (userPassword!=userRepeatedPassword) ? (document.getElementById("show-message").innerHTML="Your Password did not matched.", document.getElementById("show-message").style.color="red") :
+            (document.getElementById("show-message").innerHTML="Please Fill all required Fields!", document.getElementById("show-message").style.color="red",document.getElementById("loader").style.display="none"):
+            (userPassword.length<8) ? (document.getElementById("show-message").innerHTML="Your password must be at least 8 characters.", document.getElementById("show-message").style.color="red", document.getElementById("loader").style.display="none") : 
+            (userPassword!=userRepeatedPassword) ? (document.getElementById("show-message").innerHTML="Your Password did not matched.", document.getElementById("show-message").style.color="red", document.getElementById("loader").style.display="none") :
             firebaseAuthenticationandStoringData();
            
         
