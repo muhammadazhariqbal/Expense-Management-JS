@@ -50,7 +50,7 @@ firebase.auth().onAuthStateChanged(user=>{
               btn.addEventListener('click',(e)=>{
                 e.preventDefault();
                 
-                firebase.firestore().collection("Expense Deatils").doc(doc.id).delete()
+                firebase.firestore().collection("Expense Details").doc(doc.id).delete()
                 .then(deleteItem=>{
                     console.log("Deleted!")
                     window.location.reload()
