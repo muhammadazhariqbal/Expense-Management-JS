@@ -32,7 +32,7 @@ firebase.auth().onAuthStateChanged(user=>{
                 var day=date.getDay();
                 var week = ['Sun','Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
                 var todaysDay = week[day];
-                firebase.firestore().collection("Expense Deatils").add({
+                firebase.firestore().collection("Expense Details").add({
                     selectedValue,
                     expenseTextDetails,
                     expensePrice,
