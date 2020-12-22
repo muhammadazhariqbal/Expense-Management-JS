@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Expense Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <div id="loading-screen-bg">
+        <div class="loading-screen-text">
+            <h1>Expense <span class="color-style">Manager.</span></h1>
+        </div>
+    </div>
+<header>
+    <section id="navigation-bar-own">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">Expense <span class="color-style">Manager.</span> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                   
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Sign in </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="signup.html">Sign up </a>
+                    </li>
+                   
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </section> 
+    <!-- Close-my-navigation-section -->
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <section class="left-textDetails">
+                 
+                    <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">WELCOME TO <span class="color-style">EXPENSE MANAGER</span></h1>
+                   
+                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">An expense tracker app is generally used to track business expenses, which is important for accounting and tax purposes.
+                       With this app  You can tracker your expenses on the go to record things such as travel expenses, mileage, and meals. 
+                    </p>
+                    <button class="btn custom-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s"><a href="signup.html">Sing up</a></button>
+                </section>
+                <!-- close-text-details-section -->
+            </div>
+            <div class="col-md-5">
+                <section class="right-formcontainer wow fadeIn" data-wow-duration="4s" data-wow-delay="2s">
+                    <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s" id="show-message"></h3>
+                    <h2>LOGIN</h2>
+                    <p>Login now to start.</p>
+                    <form>
+                        <div class="form-group">
+                         
+                          <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="Enter Your Email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                         
+                          <input type="password" class="form-control" id="userPassword" placeholder="Enter Your Password">
+                        </div>
+                        <div class="lds-ring" id="loader"><div></div><div></div><div></div><div></div></div>
+                        <button type="submit" class="btn custom-btn" id="login-btn" onclick="login(event)">Login</button>
+                        <a href="./Reset-passwordPage.html" class="colored-link">Forgotten password?</a>
+                      </form>
+                </section>
+                <!-- Close-LoginForm-section -->
+            </div>
+        </div>
+    </div>
+</main>     
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>setTimeout(onloading => {document.getElementById("loading-screen-bg").style.display="none";}, 2000);</script>
+<script src="js/wow.min.js"></script>
+
+<script>
+    new WOW().init();
+</script>
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script>
+ // Your web app's Firebase configuration
+ var firebaseConfig = {
+  apiKey: "AIzaSyByYiK2cBNIFEq-OcFua6GrmYpQjngnBws",
+  authDomain: "expense-managerx.firebaseapp.com",
+  projectId: "expense-managerx",
+  storageBucket: "expense-managerx.appspot.com",
+  messagingSenderId: "274169807776",
+  appId: "1:274169807776:web:a7250169bc7fed4a30dac5"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+ 
+  
+<script src="./js/signin-script.js"></script>
+</body>
+</html>

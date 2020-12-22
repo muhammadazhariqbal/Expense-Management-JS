@@ -1,0 +1,66 @@
+
+@media only screen and (max-width:665px){
+    .box{
+        height: 110px;
+        width: 70%;
+    }
+}
+@media only screen and (max-width:410px){
+    .box{
+        height: auto;
+        width: 70%;
+    }
+}
+@media only screen and (max-width:330px){
+    #dashboard h1{
+        font-size: 2rem;
+    }
+    #dashboard h2 {
+        font-size: 1.7rem;
+    }
+    .box>h2{
+        font-size: 1.2rem;
+    }
+    .fa-arrow-circle-up{
+        color: #FF643D;
+        font-size: 2rem;
+        transform: rotate(40deg);
+    }
+}
+@media only screen and (max-width:230px){ #dashboard h1{font-size: 1.7rem;}}
+@media only screen and (max-width:430px){
+    .form-group input{font-size:0.6rem;}
+    .form-text {font-size: 0.6rem !important;}
+}
+@media only screen and (max-width:995px){  .form-group input{font-size:0.6rem;}}
+@media only screen and (max-width:760px){
+    .all-categories-details-img {margin-top: 2rem;}
+}
+@media only screen and (max-width:300px){
+    #resetpassword-details h1  {font-size: 1.6rem;} 
+    #resetpassword-details p  {font-size: 0.8rem;} 
+    #confirmation-page-details h1{font-size: 1.6rem;}
+    
+}
+@media only screen and (max-width:380px){
+    #all-categories-details {margin: 0rem;}
+#all-categories-details h1{
+    
+    font-size: 1.7rem;
+    margin-top: 6rem;
+}
+#all-categories-details p{
+    
+    font-size: 1rem;
+    margin: 4px;
+}
+#all-categories-details ul li {
+  
+   
+   padding: 7px;
+   text-align: left;
+   margin: 7px;
+   font-size: 1rem;
+   
+}
+}

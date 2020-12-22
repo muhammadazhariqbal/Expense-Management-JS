@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-Expense Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+</head>
+<body onload='onloading()'>
+    <div id="loading-screen-bg">
+        <div class="loading-screen-text">
+            <h1>Expense <span class="color-style">Manager.</span></h1>
+        </div>
+    </div>
+    <header>
+        <section id="navigation-bar-own">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">Expense <span class="color-style">Manager.</span> </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                           <li class="nav-item">
+                          <a class="nav-link" href="" onclick="logout(event)">Log out &nbsp;<i class="fas fa-sign-out-alt"></i></a>
+                        </li>
+                    </ul>
+                    </div>
+                  </nav>
+            </div>
+        </section> 
+        <!-- Close-my-navigation-section -->
+    </header>
+    
+<main>
+    <section id="dashboard">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1 class="wow fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">DASHBOARD</h1>
+                    <h2 id="greetings" class="wow fadeInUp"  data-wow-duration="1s" data-wow-delay="1s">Hello, <span id="userName" class="color-style"></span></h2>
+                    <h2 class="wow fadeIn"  data-wow-duration="1s" data-wow-delay="2s">Welcome Back !</h2>
+                    <p class="wow fadeIn"  data-wow-duration="1s" data-wow-delay="3s"> <span id="day"></span>&nbsp;<span id="month">--</span> &nbsp;<span id="date">--</span> &nbsp;</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="./images/dashboard-icon.png" alt="dashboard-icon" class="wow fadeIn"  data-wow-duration="2s" data-wow-delay="1s">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Close-dashboard-section -->
+
+    <section id="dashboard-addDetails-boxes">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box mx-auto wow fadeInUp"  data-wow-duration="1s" data-wow-delay="0s">
+                        <h2>ADD CATEGORY</h2>
+                        <a href="./add-category.html"><button id="link-btn" onclick=""><i class="fas fa-arrow-circle-up"></i></button></a>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box mx-auto wow fadeInUp"  data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h2>ADD EXPENSE<h2>
+                            <a href="./add-expense.html"> <button id="link-btn" onclick=""><i class="fas fa-arrow-circle-up"></i></button></a>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box mx-auto wow fadeInUp"  data-wow-duration="1s" data-wow-delay="1s">
+                        <h2>ALL CATEGORIES</h2>
+                        <a href="./all-categories.html"> <button id="link-btn" onclick=""><i class="fas fa-arrow-circle-up"></i></button></a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Close-dashboard-addDetails-boxes -->
+    <section id="allexpenses-details-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="wo fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">All Expenses</h2>
+                    <div id="expense-details-list">
+                       
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+var onloading=()=>{document.getElementById("loading-screen-bg").style.display="none";}
+</script>
+<script src="js/wow.min.js"></script>
+
+<script>
+    new WOW().init();
+</script>
+
+
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script>
+ // Your web app's Firebase configuration
+ var firebaseConfig = {
+  apiKey: "AIzaSyByYiK2cBNIFEq-OcFua6GrmYpQjngnBws",
+  authDomain: "expense-managerx.firebaseapp.com",
+  projectId: "expense-managerx",
+  storageBucket: "expense-managerx.appspot.com",
+  messagingSenderId: "274169807776",
+  appId: "1:274169807776:web:a7250169bc7fed4a30dac5"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+ 
+<script src="./js/dashboard-script.js"></script>
+
+</body>
+</html>
