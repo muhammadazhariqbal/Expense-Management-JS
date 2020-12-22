@@ -6,7 +6,7 @@ firebase.auth().onAuthStateChanged(user=>{
     .catch(error=>{
         console.log(error)
     }), 
-    firebase.firestore().collection("Expense Deatils").get()
+    firebase.firestore().collection("Expense Details").get()
     .then(querySnapshot=>{
         querySnapshot.forEach(doc=>{
             
@@ -32,10 +32,10 @@ firebase.auth().onAuthStateChanged(user=>{
                 deleteIcon.classList.add('fas','fa-trash-alt');
                 btn.appendChild(deleteIcon)
               
-              var liCategoryValue=document.createTextNode(ExpenseCategoryName+'\u00A0 : \u00A0 \u00A0 \u00A0')
-              var createdDay=document.createTextNode(" \u00A0On\u00A0"+createdDay+',\u00A0 \u00A0')
-              var liTextValue=document.createTextNode(ExpenseTextDetails+'\u00A0 \u00A0 \u00A0')
-              var liPriceValue=document.createTextNode("\u00A0 \u00A0"+ExpensePrice)
+              var liCategoryValue=document.createTextNode(ExpenseCategoryName+'\u00A0 : \u00A0')
+              var createdDay=document.createTextNode("On\u00A0"+createdDay+',\u00A0 ')
+              var liTextValue=document.createTextNode(ExpenseTextDetails+'\u00A0')
+              var liPriceValue=document.createTextNode("\u00A0"+ExpensePrice)
              // var liDateValue=document.createTextNode(createdDate)
              span.appendChild(createdDay)
               span.appendChild(liCategoryValue)
