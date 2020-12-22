@@ -1,5 +1,4 @@
-firebase.auth().onAuthStateChanged(user=>{
-  if(user){
+
     var login=(event)=>{
       event.preventDefault();
       //GETTING USER LOGIN DETAILS
@@ -33,5 +32,4 @@ firebase.auth().onAuthStateChanged(user=>{
     })
       
     }
-  }
-})
+  
