@@ -1,5 +1,4 @@
-firebase.auth().onAuthStateChanged(user=>{
-    if(user){
+
         var RegisterUser=(event)=>{
   
             event.preventDefault();
@@ -73,4 +72,4 @@ firebase.auth().onAuthStateChanged(user=>{
             })
         }
     }
-})
+
