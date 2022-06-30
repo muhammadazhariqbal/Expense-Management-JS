@@ -128,9 +128,14 @@ body{
 .custom-btn {
     background-color: #FF643D;
     height: 3rem;
-    width: 8rem;
+    width: 10rem;
    color: #fff;
    font-family: 'Poppins', sans-serif;
+   border: none;
+   outline: none;
+   cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .custom-btn>a{text-decoration: none; color: #fff;}
 .custom-btn:hover{
@@ -291,7 +296,6 @@ cursor: pointer;
     width: 2rem;
     text-align: right;
     float: right;
-    
     border: none;
     outline: none;
     background-color: transparent;
@@ -444,13 +448,13 @@ option:hover{
 #all-categories-details ul li {
     list-style: none;
     color: #1A2238;
-    border-radius:2rem;
+    border-radius:5px;
     font-family: 'Poppins', sans-serif;
    background-color: #fff;
    padding: 10px;
    text-align: left;
    margin: 10px;
-   font-size: 1.5rem;
+   font-size: 1rem;
    font-weight: bold;
    
 }

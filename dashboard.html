@@ -89,11 +89,33 @@
     <section id="allexpenses-details-container">
         <div class="container">
             <div class="row">
+                <button class="custom-btn" onclick="genReport()">GEN REPORT</button>
                 <div class="col-md-12">
-                    <h2 class="wo fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">All Expenses</h2>
-                    <div id="expense-details-list">
+                    <div id="table-cont">
+                        <h2 class="wo fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">All Expenses</h2>
+                        <div id="expense-details-list">
+                            <table id="expense-table" class="table">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Money</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </table>
+                           
+                        </div>
+                        <a style="color: black; font-weight:bold">Expense <span class="color-style">Manager.</span> </a>
+                        <p>An expense tracker app is generally used to track small budget /  business expenses, which is important for accounting and tax purposes.
+                            With this app  You can tracker your expenses on the go to record things such as travel expenses, mileage, and meals. </p>
                        
+                        
+                        <a style="color: black; font-weight:bold">Founder, Muhammad Azhar Iqbal </a>
+                        <p>muhammad1azhar2@gmail.com</p>
+                            
                     </div>
+                   
                    
                 </div>
             </div>
@@ -151,8 +173,10 @@ firebase.initializeApp(firebaseConfig);
 <!-- Add Firebase products that you want to use -->
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 <script src="./js/dashboard-script.js"></script>
+
 
 </body>
 </html>

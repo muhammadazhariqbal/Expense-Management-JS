@@ -29,14 +29,18 @@ firebase.auth().onAuthStateChanged(user=>{
                 var expensePrice=document.getElementById("expensePrice").value;
                 var date = new Date();
                 var currentDate = date.getDate();
+                var month = date.getMonth();
                 var day=date.getDay();
+                var year=date.getFullYear();
+
                 var week = ['Sun','Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
+                var months =  ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
                 var todaysDay = week[day];
                 firebase.firestore().collection("Expense Details").add({
                     selectedValue,
                     expenseTextDetails,
                     expensePrice,
-                    CreatedAt:`${currentDate} ${todaysDay}`,
+                    CreatedAt:`${currentDate} / ${months[month]} / ${year}`,
                      userID:user.uid
                 })
                 .then(data=>{ 
