@@ -1,103 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add Expense-Expense Tracker</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="./css/animate.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-</head>
-<body>
-<!-- 
-    <div id="loading-screen-bg">
-        <div class="loading-screen-text">
-            <h1>Expense <span class="color-style">Manager.</span></h1>
-        </div>
-    </div> -->
-<header>
-    <section id="navigation-bar-own">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <section id="navigation-bar-own">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">Expense <span class="color-style">Manager.</span> </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto">
-                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html" onclick="logout()">Log out &nbsp;<i class="fas fa-sign-out-alt"></i></a>
-                   
-                  </ul>
-                </div>
-              </nav>
-        </div>
-    </section> 
-    <!-- Close-my-navigation-section -->
-</header>
-<main>
-    <section id="add-expense-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="./dashboard.html"> <button class="backto-btn"><i class="fas fa-long-arrow-alt-left"></i></button></a>
-                   
-                   <section id="add-form"   data-wow-duration="1s" data-wow-delay="1s">
-                    <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0s" id="show-message"></h3>
-                       <h1>ADD EXPENSE</h1>
-                       <p>Add your all expenses here</p>
-                       <form id="addExpense-form">
-                        <div class="form-group">
-                            <select class="custom-select" id="category-select">
-                              
-                            </select>
-                            
-                          </div>
-                        
-                        <div class="form-group">
-                          
-                            <input type="text" class="form-control" id="ExpenseTextDetails"  placeholder="Enter Text Details">
-                           
-                          </div>
-                          <div class="form-group">
-                          
-                            <input type="text" class="form-control" id="expensePrice"  placeholder="Enter Price">
-                           
-                          </div>
-                         <button type="submit" id="btn-load" class="btn custom-btn" onclick="getExpenseDetails(event)">Save</button>
-                      </form>
-                   </section>
-                </div>
-                <div class="col-md-6">
-                   <img src="./images/add-pageImage.png" class="wow fadeInLeft"  data-wow-duration="1s" data-wow-delay="1s" alt="add-image" height="auto" width="100%">
-                </div>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"
+              >Expense <span class="color-style">Manager.</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html" onclick="logout()"
+                    >Log out &nbsp;<i class="fas fa-sign-out-alt"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </nav>
         </div>
-    </section>
-    
-</main>     
+      </section>
+      <!-- Close-my-navigation-section -->
+    </header>
+    <main>
+      <section id="add-expense-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="./dashboard.html">
+                <button class="backto-btn">
+                  <i class="fas fa-long-arrow-alt-left"></i></button
+              ></a>
 
+              <section id="add-form" data-wow-duration="1s" data-wow-delay="1s">
+                <h3
+                  class="wow fadeInUp"
+                  data-wow-duration="2s"
+                  data-wow-delay="0s"
+                  id="show-message"
+                ></h3>
+                <h1>ADD EXPENSE</h1>
+                <p>Add your all expenses here</p>
+                <form id="addExpense-form">
+                  <div class="form-group">
+                    <select class="custom-select" id="category-select"></select>
+                  </div>
 
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="ExpenseTextDetails"
+                      placeholder="Enter Text Details"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="expensePrice"
+                      placeholder="Enter Price"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    id="btn-load"
+                    class="btn custom-btn"
+                    onclick="getExpenseDetails(event)"
+                  >
+                    Save
+                  </button>
+                </form>
+              </section>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="./images/add-pageImage.png"
+                class="wow fadeInLeft"
+                data-wow-duration="1s"
+                data-wow-delay="1s"
+                alt="add-image"
+                height="auto"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- <script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script>
     
     setTimeout(onloading => {
        
@@ -105,32 +153,31 @@
         
     }, 2000);
 </script> -->
-<script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
 
-<script>
-    new WOW().init();
-</script>
-<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
 
-<script>
- // Your web app's Firebase configuration
- var firebaseConfig = {
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
         apiKey: "AIzaSyByQw_ywcQrp-h1Y5NAu6EHpx5-w9EvrtI",
-    authDomain: "expense-mng.firebaseapp.com",
-    projectId: "expense-mng",
-    storageBucket: "expense-mng.appspot.com",
-    messagingSenderId: "524680470133",
-    appId: "1:524680470133:web:0d4db1c304666c1daa623c"
-   };
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-</script>
+        authDomain: "expense-mng.firebaseapp.com",
+        projectId: "expense-mng",
+        storageBucket: "expense-mng.appspot.com",
+        messagingSenderId: "524680470133",
+        appId: "1:524680470133:web:0d4db1c304666c1daa623c",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
 
-
-<!-- Add Firebase products that you want to use -->
-<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
-<script src="./js/addExpense-script.js"></script>
-</body>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="./js/addExpense-script.js"></script>
+  </body>
 </html>

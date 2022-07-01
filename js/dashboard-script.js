@@ -22,7 +22,6 @@ firebase.auth().onAuthStateChanged(user=>{
                 // createdDate=doc.data().CreatedAt;
                 var table = document.getElementById("expense-table");
                 var tr = document.createElement("tr");
-                var tdID = document.createElement("td");
                 var tdDate = document.createElement("td");
                 var tdCatName = document.createElement("td");
                 var tdItem = document.createElement("td");
@@ -34,13 +33,13 @@ firebase.auth().onAuthStateChanged(user=>{
                 deleteIcon.classList.add('fas','fa-trash-alt');
                 btn.appendChild(deleteIcon)
                 
-                tdID.innerText=sno;
+               
                 tdDate.innerText=createdDay;
                 tdCatName.innerText=ExpenseCategoryName;
                 tdItem.innerText=ExpenseTextDetails;
                 tdPrice.innerText=ExpensePrice;
                 tdAction.appendChild(btn)
-                tr.appendChild(tdID)
+               
                 tr.appendChild(tdDate)
                 tr.appendChild(tdCatName)
                 tr.appendChild(tdItem)
