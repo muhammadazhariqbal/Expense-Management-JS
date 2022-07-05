@@ -87,11 +87,9 @@ body{
 }
 #loader{display:none;}
 .lds-ring {
-    margin-left:9rem;
-    margin-top: 0.5rem;
-   position: absolute;
-    width: 10px;
-    height: 10px;
+   float: right;
+   margin: 10%;
+   
   }
 .lds-ring div {
     box-sizing: border-box;
@@ -250,6 +248,7 @@ cursor: pointer;
     border-top-right-radius: 1rem;
     background-color: #fff;
     height: auto;
+    width: 100%;
     margin-top: 2rem;
     padding: 10px;
 }
@@ -259,22 +258,6 @@ cursor: pointer;
     font-size: 2rem;
 }
 
-#expenseDetailTable{padding: 4rem !important;}
-#expenseDetailTable td{color: #1A2238; border: 2px solid #FF643D;}
-#expense-details-list ul li {
-    list-style: none;
-    color: #fff;
-    border-radius:2rem;
-    font-family: 'Poppins', sans-serif;
-   background-color: #1A2238;
-   padding: 10px;
-   
-   text-align: left;
-   margin: 10px;
-   font-size: 1rem;
-   font-weight: bold;
-   
-}
 
 @media only screen and (max-width:360px){
 .table td{ display: block;}
@@ -297,6 +280,7 @@ cursor: pointer;
     text-align: right;
     float: right;
     border: none;
+    margin: 10px;
     outline: none;
     background-color: transparent;
     color: #FF643D;
@@ -465,3 +449,29 @@ option:hover{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;}
+.modal-box {
+    height: auto;
+    width: 60%;
+    background-color: #fff;
+    border-radius: 2px;
+    position:fixed;
+    display: none;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+
+
+  
+    z-index: 1111;
+    box-shadow: 0px 0px 30px 2px #ff643d;
+    padding: 10px;
+    
+}
+.modal-box h3 {
+    color: #1a2238;
+    font-family: 'Poppins', sans-serif;
+    
+}
+#id {
+    display: none;
+}

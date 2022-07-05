@@ -42,12 +42,62 @@
     
 <main>
     <section id="dashboard">
+     
         <div class="container">
+            <div class="modal-box" id="modal-box">
+             <button class="btn" style="float: right;" onclick="hideModal()">X</button>
+                <h3>Update Value</h3>
+                <form id="add-category-form" method="GET">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="expense-item"
+                        placeholder="Expense Item"
+                        required
+                      />
+                    </div>
+                   
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="price"
+                          placeholder="Price"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="id"
+                          placeholder="Price"
+                          required
+                          
+                        />
+                      </div>
+                    <div class="lds-ring" id="loader">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <button
+                      type="submit"
+                      id="btn-load"
+                      class="btn custom-btn"
+                      onclick="updateBtn(event)"
+                    >
+                      Update
+                    </button>
+                  </form>
+            </div>
             <div class="row">
                 <div class="col-md-7">
                     <h1 class="wow fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">DASHBOARD</h1>
                     <h2 id="greetings" class="wow fadeInUp"  data-wow-duration="1s" data-wow-delay="1s">Hello, <span id="userName" class="color-style"></span></h2>
-                    <h2 class="wow fadeIn"  data-wow-duration="1s" data-wow-delay="2s">Welcome Back !</h2>
+                    <h2 class="wow fadeIn"  data-wow-duration="1s" data-wow-delay="2s">Welcome!</h2>
                     <p class="wow fadeIn"  data-wow-duration="1s" data-wow-delay="3s"> <span id="day"></span>&nbsp;<span id="month">--</span> &nbsp;<span id="date">--</span> &nbsp;</p>
                 </div>
                 <div class="col-md-5">
@@ -88,6 +138,8 @@
     <!-- Close-dashboard-addDetails-boxes -->
     <section id="allexpenses-details-container">
         <div class="container">
+
+            
             <div class="row">
                 <button class="custom-btn" onclick="genReport()">GEN REPORT</button>
                 <div class="col-md-12">
@@ -111,7 +163,9 @@
                             With this app  You can tracker your expenses on the go to record things such as travel expenses, mileage, and meals. </p>
                        
                         
-                        <a style="color: black; font-weight:bold">Founder, Muhammad Azhar Iqbal </a>
+                        <a style="color: black; font-weight:bold">Founders, Muhammad Umar Rasheed, Shahzaib Minhas </a>
+                        <br>
+                        <a style="color: black; font-weight:bold">Co Founder, Muhammad Azhar Iqbal</a>
                         <p>muhammad1azhar2@gmail.com</p>
                             
                     </div>

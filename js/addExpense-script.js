@@ -36,7 +36,7 @@ firebase.auth().onAuthStateChanged(user=>{
                 var week = ['Sun','Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
                 var months =  ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
                 var todaysDay = week[day];
-                firebase.firestore().collection("Expense Details").add({
+                firebase.firestore().collection("expenseDetails").add({
                     selectedValue,
                     expenseTextDetails,
                     expensePrice,
