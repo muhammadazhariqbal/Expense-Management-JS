@@ -43,7 +43,7 @@ We welcome contributions from everyone.
 
 6. **Create a Pull Request**: Create a pull request from your forked repository to the original repository.
 
-Here are some of the ways you can contribute:
+**Here are some of the ways you can contribute:**
 
 - Fixing bugs
 - Adding new features
