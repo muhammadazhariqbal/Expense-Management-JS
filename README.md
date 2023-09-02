@@ -34,7 +34,12 @@ We welcome contributions from everyone. Here are some of the ways you can contri
 - Improving documentation
 - Resolving issues
 
-Before submitting a pull request, please make sure to read our [Code of Conduct](#code-of-conduct).
+
+- [Report Bugs](.github/ISSUE_TEMPLATE/BUG_REPORT.md)
+- [Request Features](.github/ISSUE_TEMPLATE/FEATURE_REQUEST.md)
+- [Submit Pull Requests](.github/PULL_REQUEST_TEMPLATE.md)
+
+Before submitting a pull request, please make sure to read our [Code of Conduct](CODE_OF_CONDUCT.md)
 
 ## Code of Conduct
 
