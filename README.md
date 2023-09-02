@@ -40,14 +40,7 @@ Before submitting a pull request, please make sure to read our [Code of Conduct]
 
 We adhere to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
 
-### Additional Files to Create
-
-1. **CODE_OF_CONDUCT.md**: This will contain the code of conduct that contributors must adhere to.
-2. **LICENSE**: This will contain the license information for the project.
 
