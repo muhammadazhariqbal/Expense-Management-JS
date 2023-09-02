@@ -35,9 +35,9 @@ We welcome contributions from everyone. Here are some of the ways you can contri
 - Resolving issues
 
 
-- [Report Bugs](.github/ISSUE_TEMPLATE/BUG_REPORT.md)
-- [Request Features](.github/ISSUE_TEMPLATE/FEATURE_REQUEST.md)
-- [Submit Pull Requests](.github/PULL_REQUEST_TEMPLATE.md)
+- [Report Bugs](BUG_REPORT.md) Use this template if you've found a bug and want to report it.
+- [Request Features](FEATURE_REQUEST.md) Use this template if you have a new feature in mind that you'd like to suggest.
+- [Submit Pull Requests](PULL_REQUEST_TEMPLATE.md) Use this template when you're ready to submit a new pull request.
 
 Before submitting a pull request, please make sure to read our [Code of Conduct](CODE_OF_CONDUCT.md)
 
