@@ -59,8 +59,8 @@ Before submitting a pull request, please make sure to read our [Code of Conduct]
 
 ## Code of Conduct
 
-We adhere to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms.
-[LICENSE] [LICENSE.md]
+We adhere to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms. 
+[License](LICENSE)
 
 
 
