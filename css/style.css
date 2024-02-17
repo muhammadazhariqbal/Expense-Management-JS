@@ -135,6 +135,17 @@ body{
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.custom-input{
+    display: flex;
+    align-items: center;
+    
+  
+}
+/* .custom-search{
+    margin-left: 5rem;
+    justify-content: space-between;
+} */
 .custom-btn>a{text-decoration: none; color: #fff;}
 .custom-btn:hover{
     background-color: transparent;
